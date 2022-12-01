@@ -1,0 +1,67 @@
+@import "../../App.scss";
+
+.about {
+  margin-top: 100px;
+  .about__main {
+    padding: 0 5%;
+    text-align: center;
+    p {
+      padding: 20px 0 60px 0;
+    }
+  }
+  .about__content {
+    .about__content__heading {
+      @include flex(row, "");
+      background-color: $veryPaleRed;
+      border-radius: 50px 0 0 50px;
+      margin-left: 5%;
+      span {
+        background-color: $brightRed;
+        color: $veryLightGray;
+        padding: 5px 15px;
+        border-radius: 50px;
+      }
+      h3 {
+        color: $darkBlue;
+        font-size: 16px;
+        padding: 5px 10px;
+      }
+    }
+    .about__content__description {
+      padding: 15px 5% 30px 5%;
+    }
+  }
+  @media (min-width: 768px) {
+    @include flex(row, space-between);
+    padding: 0 10%;
+    align-items: flex-start;
+    gap: 5%;
+    .about__main {
+      text-align: left;
+      padding: 0;
+      max-width: 400px;
+      h2 {
+        font-size: 30px;
+      }
+    }
+    .about__content {
+      @include flex(column, space-between);
+      max-width: 400px;
+      align-items: flex-start;
+      .about__content__heading {
+        margin-left: 0;
+        background: none;
+      }
+      .about__content__description {
+        padding: 15px 0% 30px 0%;
+      }
+    }
+  }
+  @media (min-width: 1080px) {
+    .about__content {
+      .about__content__heading {
+        margin-left: -60px;
+      }
+    }
+  }
+}

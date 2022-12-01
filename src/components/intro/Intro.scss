@@ -1,0 +1,42 @@
+@import "../../App.scss";
+
+.intro {
+  margin-top: 40px;
+  text-align: center;
+  padding: 0 10%;
+  .intro__illustration {
+    img {
+      width: 80vw;
+      max-width: 400px;
+    }
+  }
+  .intro__description {
+    p {
+      padding: 10px 0 30px 0;
+    }
+  }
+  @media (min-width: 768px) {
+    @include flex(row-reverse, space-between);
+    text-align: left;
+    .intro__description {
+      h1 {
+        font-size: 45px;
+      }
+      p {
+        max-width: 340px;
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    .intro__illustration {
+      img {
+        max-width: 550px;
+      }
+    }
+    .intro__description {
+      h1 {
+        font-size: 50px;
+      }
+    }
+  }
+}
