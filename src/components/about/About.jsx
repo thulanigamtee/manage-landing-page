@@ -13,10 +13,10 @@ const About = () => {
           teams.
         </p>
       </div>
-      <div className="about__content">
+      <div>
         {aboutContent.map(({ id, heading, description }) => {
           return (
-            <>
+            <div className="about__content" key={id}>
               <div className="about__content__heading">
                 <span>{id}</span>
                 <h3>{heading}</h3>
@@ -24,7 +24,7 @@ const About = () => {
               <div className="about__content__description">
                 <p>{description}</p>
               </div>
-            </>
+            </div>
           );
         })}
       </div>

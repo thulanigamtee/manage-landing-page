@@ -39,6 +39,9 @@ h2,
 h3 {
   color: $darkBlue;
 }
+h2 {
+  font-size: 34px;
+}
 p {
   color: $darkGrayishBlue;
   font-size: 14px;
@@ -56,6 +59,16 @@ button {
   border-radius: 50px;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+.swiper-pagination-bullet {
+  background-color: $brightRed !important;
+  @media (min-width: 900px) {
+    display: none !important;
+  }
+}
 @mixin flex($direction, $justify) {
   display: flex;
   align-items: center;

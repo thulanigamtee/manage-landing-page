@@ -1,0 +1,75 @@
+@import "../../App.scss";
+
+.footer {
+  background-color: $veryDarkBlue;
+  padding: 50px 10%;
+  .footer__search {
+    @include flex(row, space-around);
+    gap: 0 10px;
+    input {
+      border: none;
+      background-color: $veryLightGray;
+      padding: 10px 20px;
+      border-radius: 50px;
+    }
+  }
+  .footer__links {
+    @include flex(row, space-between);
+    align-items: flex-start;
+    margin-top: 60px;
+    ul {
+      li {
+        padding-bottom: 15px;
+        a {
+          color: $veryLightGray;
+        }
+      }
+    }
+  }
+  .footer__icons {
+    .footer__icons__social {
+      padding: 0;
+      margin: 40px 0;
+      ul {
+        @include flex(row, space-between);
+        li {
+          a {
+            img {
+              width: 28px;
+              height: 28px;
+            }
+          }
+        }
+      }
+    }
+    .footer__icons__manage {
+      text-align: center;
+    }
+  }
+  .footer__copyright {
+    margin-top: 40px;
+    text-align: center;
+  }
+  @media (min-width: 768px) {
+    @include flex(row, space-between);
+    align-items: flex-start;
+    padding: 30px 10%;
+    .footer__search {
+      @include flex(column, "");
+    }
+    .footer__links {
+      @include flex(row, space-between);
+      align-items: flex-start;
+      margin-top: 0;
+    }
+    .footer__icons {
+      @include flex(column-reverse, space-between);
+      .footer__icons__social {
+        margin: 0;
+      }
+    }
+    .footer__copyright {
+      margin-top: 0;
+    }
+  }
+}

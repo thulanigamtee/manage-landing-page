@@ -1,0 +1,26 @@
+@import "../../App.scss";
+
+.outro {
+  @include flex(column, "");
+  background-color: $brightRed;
+  padding: 80px 10%;
+  text-align: center;
+  gap: 30px 0;
+  .outro__heading {
+    h2 {
+      color: $veryLightGray;
+      max-width: 400px;
+    }
+  }
+  .outro__getStarted {
+    button {
+      background-color: $veryLightGray;
+      color: $brightRed;
+    }
+  }
+  @media (min-width: 768px) {
+    @include flex(row, space-between);
+    text-align: left;
+    padding: 50px 10%;
+  }
+}
