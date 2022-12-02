@@ -9,7 +9,7 @@ import { useMediaQuery } from "react-responsive";
 import "./Footer.scss";
 
 const Footer = () => {
-  const isBigEnough = useMediaQuery({ query: "(min-width:768px)" });
+  const isBigEnough = useMediaQuery({ query: "(min-width:900px)" });
   return (
     <div className="footer">
       {isBigEnough ? (
@@ -32,58 +32,58 @@ const Footer = () => {
         <div className="footer__links__first">
           <ul>
             <li>
-              <a>home</a>
+              <a href="home">home</a>
             </li>
             <li>
-              <a>pricing</a>
+              <a href="pricing">pricing</a>
             </li>
             <li>
-              <a>products</a>
+              <a href="products">products</a>
             </li>
             <li>
-              <a>about us</a>
+              <a href="about us">about us</a>
             </li>
           </ul>
         </div>
         <div className="footer__links__second">
           <ul>
             <li>
-              <a>careers</a>
+              <a href="careers">careers</a>
             </li>
             <li>
-              <a>community</a>
+              <a href="community">community</a>
             </li>
             <li>
-              <a>privacy policy</a>
+              <a href="privacy policy">privacy policy</a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="footer__icons">
+      <div className="footer__icons">
         <div className="footer__icons__social">
           <ul>
             <li>
-              <a>
+              <a href="facebook">
                 <img src={facebook} alt="facebook-icon" />
               </a>
             </li>
             <li>
-              <a>
+              <a href="youtube">
                 <img src={youtube} alt="youtube-icon" />
               </a>
             </li>
             <li>
-              <a>
+              <a href="twitter">
                 <img src={twitter} alt="twitter-icon" />
               </a>
             </li>
             <li>
-              <a>
+              <a href="pinterest">
                 <img src={pinterest} alt="pinterest-icon" />
               </a>
             </li>
             <li>
-              <a>
+              <a href="instagram">
                 <img src={instagram} alt="instagram-icon" />
               </a>
             </li>

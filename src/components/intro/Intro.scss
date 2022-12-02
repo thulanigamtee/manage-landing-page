@@ -3,7 +3,11 @@
 .intro {
   margin-top: 40px;
   text-align: center;
-  padding: 0 10%;
+  padding: 0 10% 80px 10%;
+  background: url("src/assets/images/bg-tablet-pattern.svg") no-repeat top 320px
+    right -140px;
+  background-size: 300px 300px;
+  overflow: visible;
   .intro__illustration {
     img {
       width: 80vw;
@@ -19,13 +23,13 @@
     @include flex(row-reverse, space-between);
     text-align: left;
     .intro__description {
-      h1 {
-        font-size: 45px;
-      }
       p {
         max-width: 340px;
       }
     }
+  }
+  @media (min-width: 768px) {
+    background: none;
   }
   @media (min-width: 1024px) {
     .intro__illustration {

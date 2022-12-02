@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactLogo from "../../assets/images/logo.svg";
-import "./_Nav.scss";
+import "./Nav.scss";
 
 const Nav = () => {
   const [isActive, setIsActive] = useState(false);
@@ -18,19 +18,19 @@ const Nav = () => {
       <div className="nav__links">
         <ul>
           <li>
-            <a href="#">pricing</a>
+            <a href="pricing">pricing</a>
           </li>
           <li>
-            <a href="#">product</a>
+            <a href="product">product</a>
           </li>
           <li>
-            <a href="#">about us</a>
+            <a href="about us">about us</a>
           </li>
           <li>
-            <a href="#">careers</a>
+            <a href="careers">careers</a>
           </li>
           <li>
-            <a href="#">community</a>
+            <a href="community">community</a>
           </li>
         </ul>
       </div>

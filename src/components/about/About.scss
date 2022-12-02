@@ -1,7 +1,6 @@
 @import "../../App.scss";
 
 .about {
-  margin-top: 100px;
   .about__main {
     padding: 0 5%;
     text-align: center;
@@ -20,10 +19,10 @@
         color: $veryLightGray;
         padding: 5px 15px;
         border-radius: 50px;
+        font-size: 18px;
       }
       h3 {
         color: $darkBlue;
-        font-size: 16px;
         padding: 5px 10px;
       }
     }
@@ -35,14 +34,12 @@
     @include flex(row, space-between);
     padding: 0 10%;
     align-items: flex-start;
-    gap: 5%;
+    gap: 0 5%;
     .about__main {
       text-align: left;
       padding: 0;
-      max-width: 400px;
-      h2 {
-        font-size: 30px;
-      }
+      max-width: 360px;
+      width: 40vw;
     }
     .about__content {
       @include flex(column, space-between);

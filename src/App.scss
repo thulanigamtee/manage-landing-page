@@ -20,10 +20,17 @@ $veryLightGray: hsl(0, 0%, 98%);
 body {
   font-family: "Be Vietnam Pro", sans-serif;
   background: $veryLightGray url("src/assets/images/bg-tablet-pattern.svg")
-    no-repeat top -80px right -80px;
-  background-size: 450px 450px;
+    no-repeat top -20px right -80px;
+  background-size: 400px 400px;
   max-width: 1440px;
   margin: auto;
+  @media (min-width: 768px) {
+    background-image: url("src/assets/images/bg-tablet-pattern.svg"),
+      url("src/assets/images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -240px right -200px, top 900px left -500px;
+    background-size: auto, auto;
+  }
 }
 
 li {
@@ -32,6 +39,9 @@ li {
     text-decoration: none;
     text-transform: capitalize;
     color: $darkBlue;
+    &:hover {
+      color: $darkGrayishBlue;
+    }
   }
 }
 h1,
@@ -39,8 +49,14 @@ h2,
 h3 {
   color: $darkBlue;
 }
+h1 {
+  font-size: 46px;
+}
 h2 {
-  font-size: 34px;
+  font-size: 36px;
+}
+h3 {
+  font-size: 18px;
 }
 p {
   color: $darkGrayishBlue;
@@ -57,6 +73,10 @@ button {
   color: $veryLightGray;
   padding: 10px 20px;
   border-radius: 50px;
+  box-shadow: 0 4px 10px 0 $brightRed;
+  &:hover {
+    opacity: 70%;
+  }
 }
 
 .swiper-button-next,
