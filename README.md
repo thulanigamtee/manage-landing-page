@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution: [See code](https://github.com/thulanigamtee/manage-landing-page)
+- Solution: [See code](https://github.com/thulanigamtee/manage-landing-page/tree/main/src)
 - Live Site : [View site](https://sage-gecko-8b3c36.netlify.app/)
 
 ## My process
