@@ -58,4 +58,4 @@ I also want to work on my folder structure, and try out the best practices as I 
 
 ### Useful resources
 
-- [Example resource 1](https://swiperjs.com/react) - Reading the documents made it a lot easier to get started with swiperjs, though I may have gotten some of the help from Youtube videos
+- [Swiperjs website](https://swiperjs.com/react) - Reading the documents made it a lot easier to get started with swiperjs, though I may have gotten some of the help from Youtube videos
