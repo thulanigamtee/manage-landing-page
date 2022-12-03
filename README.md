@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution: [Add solution URL here](https://github.com/thulanigamtee/manage-landing-page)
-- Live Site : [Add live site URL here](https://sage-gecko-8b3c36.netlify.app/)
+- Solution: [See code](https://github.com/thulanigamtee/manage-landing-page)
+- Live Site : [View site](https://sage-gecko-8b3c36.netlify.app/)
 
 ## My process
 
