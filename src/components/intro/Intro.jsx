@@ -4,9 +4,9 @@ import illustration from "/assets/images/illustration-intro.svg";
 
 const Intro = () => {
   return (
-    <div className="intro">
+    <section className="intro">
       <div className="intro__illustration">
-        <img src={illustration} />
+        <img src={illustration} alt="illustration" />
       </div>
       <div className="intro__description">
         <h1> Bring everyone together to build better products.</h1>
@@ -16,7 +16,7 @@ const Intro = () => {
         </p>
         <button type="button">get started</button>
       </div>
-    </div>
+    </section>
   );
 };
 

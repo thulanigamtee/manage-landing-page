@@ -11,7 +11,7 @@ const Nav = () => {
   };
 
   return (
-    <div className="nav">
+    <nav>
       <div className="nav__logo">
         <img src={ReactLogo} alt="logo" />
       </div>
@@ -24,7 +24,7 @@ const Nav = () => {
             <a href="product">product</a>
           </li>
           <li>
-            <a href="about us">about us</a>
+            <a href="about_us">about us</a>
           </li>
           <li>
             <a href="careers">careers</a>
@@ -39,12 +39,12 @@ const Nav = () => {
       </div>
       <div className="nav__mobileMenu">
         <button onClick={handleMobileMenu}>
-          <div className={isActive ? "active" : ""}></div>
-          <div className={isActive ? "active" : ""}></div>
-          <div className={isActive ? "active" : ""}></div>
+          <span className={isActive ? "active" : ""}></span>
+          <span className={isActive ? "active" : ""}></span>
+          <span className={isActive ? "active" : ""}></span>
         </button>
       </div>
-    </div>
+    </nav>
   );
 };
 

@@ -1,5 +1,5 @@
 @import "../../App";
-.nav {
+nav {
   @include flex(row, space-between);
   align-items: flex-start;
   margin-top: 50px;
@@ -30,28 +30,32 @@
       background: none;
       padding: 0;
       box-shadow: none;
-      div {
+      span {
         width: 25px;
         height: 4px;
+        position: absolute;
         background-color: $veryDarkBlue;
         transition: 0.3s;
+        transform: translateX(-20px);
         &:not(:last-of-type) {
           margin-bottom: 3px;
         }
         &:first-of-type {
+          transform: translate(-20px, -14px);
           &.active {
-            transform: rotate(45deg);
+            transform: translate(-20px, -14px) rotate(45deg);
             transform-origin: 10%;
           }
         }
         &:nth-of-type(2) {
+          transform: translate(-20px, -7px);
           &.active {
             opacity: 0;
           }
         }
         &:last-of-type {
           &.active {
-            transform: rotate(-45deg);
+            transform: translateX(-20px) rotate(-45deg);
             transform-origin: 10%;
           }
         }

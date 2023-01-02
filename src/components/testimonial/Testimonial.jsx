@@ -13,7 +13,7 @@ import "swiper/css";
 const Testimonial = () => {
   const isBigEnough = useMediaQuery({ query: "(min-width:900px)" });
   return (
-    <div className="testimonial">
+    <section className="testimonial">
       <div className="testimonial__heading">
         <h2>What they've said</h2>
       </div>
@@ -110,7 +110,7 @@ const Testimonial = () => {
       <div className="testimonial__getStarted">
         <button type="button">get started</button>
       </div>
-    </div>
+    </section>
   );
 };
 

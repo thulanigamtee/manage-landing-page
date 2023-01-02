@@ -11,7 +11,7 @@ import "./Footer.scss";
 const Footer = () => {
   const isBigEnough = useMediaQuery({ query: "(min-width:900px)" });
   return (
-    <div className="footer">
+    <footer>
       {isBigEnough ? (
         <div className="footer__search">
           <div>
@@ -41,7 +41,7 @@ const Footer = () => {
               <a href="products">products</a>
             </li>
             <li>
-              <a href="about us">about us</a>
+              <a href="about_us">about us</a>
             </li>
           </ul>
         </div>
@@ -54,7 +54,7 @@ const Footer = () => {
               <a href="community">community</a>
             </li>
             <li>
-              <a href="privacy policy">privacy policy</a>
+              <a href="privacy_policy">privacy policy</a>
             </li>
           </ul>
         </div>
@@ -98,7 +98,7 @@ const Footer = () => {
           <p>Copyright 2020. All Rights Reserved</p>
         </div>
       )}
-    </div>
+    </footer>
   );
 };
 

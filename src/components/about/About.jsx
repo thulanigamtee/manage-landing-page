@@ -4,7 +4,7 @@ import aboutContent from "./AboutContent";
 
 const About = () => {
   return (
-    <div className="about">
+    <section className="about">
       <div className="about__main">
         <h2>What’s different about Manage?</h2>
         <p>
@@ -28,7 +28,7 @@ const About = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 
