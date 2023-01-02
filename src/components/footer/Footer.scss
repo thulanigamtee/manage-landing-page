@@ -5,16 +5,13 @@
   padding: 50px 10%;
   .footer__search {
     @include flex(row, space-between);
-    flex-wrap: wrap;
-    max-width: 300px;
     gap: 10px;
-    margin: auto;
     input {
       border: none;
       background-color: $veryLightGray;
       padding: 10px 20px;
       border-radius: 50px;
-      width: 220px;
+      width: clamp(100px, 90%, 400px);
     }
     button {
       box-shadow: none;

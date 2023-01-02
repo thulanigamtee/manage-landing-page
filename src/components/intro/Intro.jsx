@@ -1,6 +1,6 @@
 import React from "react";
 import "./Intro.scss";
-import illustration from "../../assets/images/illustration-intro.svg";
+import illustration from "/assets/images/illustration-intro.svg";
 
 const Intro = () => {
   return (

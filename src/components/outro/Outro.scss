@@ -2,10 +2,11 @@
 
 .outro {
   @include flex(column, "");
-  background: $brightRed url("src/assets/images/bg-simplify-section-mobile.svg")
+  background: $brightRed url("/assets/images/bg-simplify-section-mobile.svg")
     no-repeat top 40px left;
   padding: 80px 10%;
   text-align: center;
+  margin-top: 40px;
   gap: 30px 0;
   .outro__heading {
     h2 {
@@ -23,8 +24,7 @@
     @include flex(row, space-between);
     text-align: left;
     padding: 50px 10%;
-    background: $brightRed
-      url("src/assets/images/bg-simplify-section-desktop.svg") no-repeat top
-      left;
+    background: $brightRed url("/assets/images/bg-simplify-section-desktop.svg")
+      no-repeat top left;
   }
 }

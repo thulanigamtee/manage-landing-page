@@ -19,14 +19,14 @@ $veryLightGray: hsl(0, 0%, 98%);
 
 body {
   font-family: "Be Vietnam Pro", sans-serif;
-  background: $veryLightGray url("src/assets/images/bg-tablet-pattern.svg")
+  background: $veryLightGray url("/assets/images/bg-tablet-pattern.svg")
     no-repeat top -20px right -80px;
   background-size: 400px 400px;
   max-width: 1440px;
   margin: auto;
   @media (min-width: 768px) {
-    background-image: url("src/assets/images/bg-tablet-pattern.svg"),
-      url("src/assets/images/bg-tablet-pattern.svg");
+    background-image: url("/assets/images/bg-tablet-pattern.svg"),
+      url("/assets/images/bg-tablet-pattern.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: top -240px right -200px, top 900px left -500px;
     background-size: auto, auto;
@@ -56,7 +56,7 @@ h2 {
   font-size: 36px;
 }
 h3 {
-  font-size: 18px;
+  font-size: 16px;
 }
 p {
   color: $darkGrayishBlue;

@@ -1,10 +1,10 @@
 import React from "react";
-import ReactLogo from "../../assets/images/logo-footer.svg";
-import facebook from "../../assets/images/icon-facebook.svg";
-import instagram from "../../assets/images/icon-instagram.svg";
-import twitter from "../../assets/images/icon-twitter.svg";
-import pinterest from "../../assets/images/icon-pinterest.svg";
-import youtube from "../../assets/images/icon-youtube.svg";
+import ReactLogo from "/assets/images/logo-footer.svg";
+import facebook from "/assets/images/icon-facebook.svg";
+import instagram from "/assets/images/icon-instagram.svg";
+import twitter from "/assets/images/icon-twitter.svg";
+import pinterest from "/assets/images/icon-pinterest.svg";
+import youtube from "/assets/images/icon-youtube.svg";
 import { useMediaQuery } from "react-responsive";
 import "./Footer.scss";
 

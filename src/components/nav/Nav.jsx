@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ReactLogo from "../../assets/images/logo.svg";
+import ReactLogo from "/assets/images/logo.svg";
 import "./Nav.scss";
 
 const Nav = () => {
